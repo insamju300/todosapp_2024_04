@@ -1,14 +1,23 @@
 'use client';
-import Button from '@mui/material/Button';
 
-export default function Home() {
+import * as React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import { Button, Box, AppBar, Toolbar } from '@mui/material';
+import theme from './theme';
+import { MdDeleteForever } from 'react-icons/md';
+
+export default function App() {
   return (
     <>
-      <div>
-        <Button className="tw-bg-red-500" variant="contained">
-          Contained
-        </Button>
-      </div>
+      <ThemeProvider theme={theme}>
+        <AppBar position="static">
+          <Toolbar className="tw-justify-center">
+            <a className="tw-font-bold" href="/">
+              NOTE!
+            </a>
+          </Toolbar>
+        </AppBar>
+      </ThemeProvider>
     </>
   );
 }
