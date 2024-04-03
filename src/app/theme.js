@@ -2,6 +2,9 @@ import { createTheme } from '@mui/material';
 
 const theme = createTheme({
   palette: {
+    typocraphy: {
+      fontFamily: ['GmarketSansMedium'],
+    },
     type: 'dark',
     primary: {
       main: '#2196f3',
@@ -13,4 +16,3 @@ const theme = createTheme({
 });
 
 export default theme;
-//참조 https://mui.com/material-ui/customization/theming/
